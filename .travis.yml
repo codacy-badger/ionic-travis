@@ -6,11 +6,42 @@ branches:
   only:
     - master
 
-before_script:
+before_install:
+  - echo "Before Install Step"
+
+install:
+  - echo "Install Step"
   - npm install -g ionic cordova
 
+before_script:
+  - echo "Before Script Step"
+
 script:
+  - echo "Script Step"
   - npm i
   - rm -rf platforms
   - ionic cordova platform add android
-  - ionic cordova build
+
+before_cache:
+  - echo "Before cache Step"
+
+cache:
+  - echo "Cache Step"
+
+after_success:
+  - echo "After Success Step"
+
+after_failure:
+  - echo "After failure Step"
+
+before_deploy:
+  - echo "Before Deploy Step"
+
+deploy:
+  - echo "Deploy Step"
+
+after_deploy:
+  - echo "After Deploy Step"
+
+after_script:
+  - echo "After Script Step"
