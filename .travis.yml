@@ -65,4 +65,4 @@ after_deploy:
   - echo "After Deploy Step"
 
 after_script:
-  - echo "After Script Step"
+  - echo "After Script Step."
