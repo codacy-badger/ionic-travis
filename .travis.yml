@@ -37,8 +37,8 @@ after_failure:
 before_deploy:
   - echo "Before Deploy Step"
 
-deploy:
-  - echo "Deploy Step"
+#deploy:
+#  - echo "Deploy Step"
 
 after_deploy:
   - echo "After Deploy Step"
