@@ -50,7 +50,7 @@ after_failure:
   - echo "After failure Step"
 
 before_deploy:
-  - echo "Before Deploy Step"
+  - echo "Before Deploy Step."
 
 deploy:
   provider: releases
