@@ -10,6 +10,10 @@ android:
     - extra-android-m2repository
     - addon-google_apis-google-26
 
+env:
+  global:
+  - JAVA_HOME=/usr/lib/jvm/java-8-oracle
+
 branches:
   only:
     - master
@@ -31,6 +35,7 @@ script:
   - npm i
   - rm -rf platforms
   - ionic cordova platform add android
+  - ionic cordova build android --prod --release
 
 before_cache:
   - echo "Before cache Step"
