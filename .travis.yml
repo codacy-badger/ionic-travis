@@ -55,7 +55,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key:
-    secure: YOUR_API_KEY_ENCRYPTED
+    secure: "sbrI/kreecXiH9kiNO9IeMEJKIjgg8exGseTEPwo/62DDGaZeMBSP9dKMif1ufv+ZZK0+agH8zDESigFJuW5W6I3LCYbO7st0w0JHAx0/qgkKu3SG2kKaFf4Z0DRQWRlOD66iyhHLGY7nfWsMSyR1Px0RZ2/ovd9e8tjsSoKz/GpfBC+Pa2ahK6VBLInyhxxALMBBWj4xYL74UV70dFstOjX/mRTbSGOycrfaTpScPqdJty/53gUkakEwfJV8vGSBULPmMWIfpR/iPWIDIMiJYyQ/uE67GZITVgqosObZWNf8byP3tZqaWSlKMkfx8TPiTWh1BVSSO70/6ty4KSNIKiP9JMErKnGIRSaBDthCFgB6ckDhTiHKJImSRN0tJXR7RN6N7D5FANTYhCfYOUy2v3bvmdFr6CFguSUYPPLxT6RHFZwz5ZDNKGLtHSMCbCpYNn0mMuqg5zeDgzZoUpqdLlux1yuULhwteqVVLAZQtwnSfvQEZ6S+xZRK+5Qz//E5kqHTuuYN3EyLvbcwJ04/4Pni3hYBL83DPshPBwD4UVdAwRRFlV5J4G9eUnj8VshURZHBENsVOeqkB5Z4L9g2eKWxUuVyXHnrKwagkXdJFcocgAyhL6GLfUe4FK642xUafL3NkySEmuTmNXZJSrSRV33i5BZ1Nq19cRMLkI+8OA="
   file: "platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk"
   skip_cleanup: true
   on:
