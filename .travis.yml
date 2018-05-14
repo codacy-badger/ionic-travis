@@ -13,9 +13,9 @@ env:
   global:
   - JAVA_HOME=/usr/lib/jvm/java-8-oracle
   - secure: Dcw2b00aVho7kJwPVlbN/4BmTLNRaHHvSXr38mQ3VjKuEx5stkpFCJLnyW3UpgFxCrcs0DybvptUMrMuhpr2OxTAk5htyyIGywPSIOWQ8/pgVgZExUtoFMFhJ+9xZtVnDnRkAxS+4r7toFoOilEQoysRQg205HPEvpi4NarLJMz3BgF23E/wRLCSKyQCz1qK53n1oU//cog7dBSXe6sf0LraOsjXgReo++4xquRe6lVcLh2BWlToBJxKCMeuzZ9a4p2AwuKsThA1jg22JITIwo/gaGLc45vRkazgj4lIdHchqgRI65rgzPOyAJLRrK93T0TRdu1VLZSJbMpivNQX3Vl4ncIjYaEv6YeWftY089NrqlsyKD7jmmNpmFsnc3UebSvZ5JjvCi35r3UwalhhNInBHIrxFjtZaxBnsf3qUvvcOY1hK+zQMG2UrPwcgLNcihPC+s5yDJFwSxCcQdyLJS+uRQvGGqSG+uky66J+aR/jCYgGyS8vu7l3WuSiD1tJr7uUO9VwbJ02nFCIA6DmlUt0jEpU6Rs7NT12QrQAr/gk+FiKbtA2JejdV0vFC7x2VUMyoAcUQYby5DtmGQNSeXoW9nChgDmNdqRU7wtkJy0v81YSmZ4hbzEbVbRKfbrH1kMGMjC2/uIBPPtfnC4mEk88qi6LvFxycCkYfxloUFQ=
-branches:
-  only:
-  - master
+#branches:
+#  only:
+#  - master
 before_install:
 - nvm install 8.11.1
 - npm install -g ionic cordova
