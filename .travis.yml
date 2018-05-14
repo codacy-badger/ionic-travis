@@ -56,7 +56,7 @@ deploy:
   provider: releases
   api_key:
     secure: YOUR_API_KEY_ENCRYPTED
-  file: "FILE TO UPLOAD"
+  file: "platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk"
   skip_cleanup: true
   on:
     tags: true
