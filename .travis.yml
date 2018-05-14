@@ -48,6 +48,9 @@ deploy:
   file: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
   on:
     repo: itsvick/ionic-travis
+    branches:
+      only:
+        - master
 after_deploy:
 - echo "After Deploy Step"
 after_script:
