@@ -14,9 +14,9 @@ env:
   global:
   - JAVA_HOME=/usr/lib/jvm/java-8-oracle
 
-branches:
-  only:
-    - master
+#branches:
+#  only:
+#    - master
 
 before_install:
   - nvm install 8.11.1
