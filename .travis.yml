@@ -59,6 +59,7 @@ deploy:
   file: "platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk"
   skip_cleanup: true
   on:
+    repo: itsvick/ionic-travis
     tags: true
 
 after_deploy:
