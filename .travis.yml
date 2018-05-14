@@ -30,7 +30,7 @@ script:
 - npm i
 - rm -rf platforms
 - ionic cordova platform add android
-- ionic cordova build android --prod --release
+- ionic cordova build android
 before_cache:
 - echo "Before cache Step"
 cache:
@@ -46,7 +46,7 @@ deploy:
   file_glob: true
   api_key:
     secure: t2u++Oueu7aCq24rOfuKjJtQR0gffPgPQD77KAk8THPclobKSzxnofDiOZSqX/Ay41Sc55mJzKxHM46JGk2v5DKwiHqJEv3Gz2cHQzrczFN9kkBhHzL68SDyXLIBt45wRogzSAOI7VlE4vHUQ3f50eBtGbcS0Uhl8XkCqJFFMtZAWFPaTbzW10vMPkI32AGwLNJ3E5oB1NAkkQuYSFNR6ArT0CSO833RSYCnLddfYrCIu6GZzknvaM5NtiY0Agf1qpfQff25zHVrtnt5BicvYovecKlBoWIRlu2q/qCuSvqqXM++8tx7r4YE/Cc88UarT0vcmOmWQ0fGLFRhijyucgLB4x47QuZ88H8VW3OLEf6Xfcr0iR+AK79nd4yPkbx97Qe01bFt+wdXik7gccx5Ns33pa7z+v7wS8tTWKkl329Sj1Xl3EvUxX2ndBPDaDfGqxb3GS8x8AIBzDaC1E7jTyeYpT3VlzaByCQmsSLPL00VzqywQ5tFH5Iw4xSMwRkjtPYcIEIiuYNSL/q1KXx2NlXO32nnbqJ6K1N1hjAC53ZaKDvHkQ8xtGZ06CpgPYvSwLNmyhVlaHx8CMsrMGFQBQw49CiNHRu0ww6QeQNCx+AvWA8ou4gQb7MFqyhavim2BwodrQUl7oj7+8vX9zt0I0SJq3umewGMfOsaYDjZ+ww=
-  file: platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk
+  file: platforms/android/app/build/outputs/apk/debug/app-debug.apk
   skip_cleanup: true
   on:
     repo: itsvick/ionic-travis
